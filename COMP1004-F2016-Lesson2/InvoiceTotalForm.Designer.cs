@@ -45,9 +45,9 @@
             this.SubTotalLabel.AutoSize = true;
             this.SubTotalLabel.Location = new System.Drawing.Point(12, 9);
             this.SubTotalLabel.Name = "SubTotalLabel";
-            this.SubTotalLabel.Size = new System.Drawing.Size(53, 13);
+            this.SubTotalLabel.Size = new System.Drawing.Size(50, 13);
             this.SubTotalLabel.TabIndex = 0;
-            this.SubTotalLabel.Text = "Sub Total";
+            this.SubTotalLabel.Text = "SubTotal";
             // 
             // DiscountPercentLabel
             // 
@@ -61,6 +61,7 @@
             // DiscountAmountLabel
             // 
             this.DiscountAmountLabel.AutoSize = true;
+            this.DiscountAmountLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.DiscountAmountLabel.Location = new System.Drawing.Point(12, 85);
             this.DiscountAmountLabel.Name = "DiscountAmountLabel";
             this.DiscountAmountLabel.Size = new System.Drawing.Size(88, 13);
@@ -85,16 +86,19 @@
             // 
             // DiscountPercentTextBox
             // 
-            this.DiscountPercentTextBox.ForeColor = System.Drawing.Color.White;
+            this.DiscountPercentTextBox.BackColor = System.Drawing.Color.White;
+            this.DiscountPercentTextBox.ForeColor = System.Drawing.Color.Black;
             this.DiscountPercentTextBox.Location = new System.Drawing.Point(112, 47);
             this.DiscountPercentTextBox.Name = "DiscountPercentTextBox";
             this.DiscountPercentTextBox.ReadOnly = true;
             this.DiscountPercentTextBox.Size = new System.Drawing.Size(100, 20);
             this.DiscountPercentTextBox.TabIndex = 5;
+            this.DiscountPercentTextBox.Text = "10 %";
             // 
             // DiscountAmountTextBox
             // 
-            this.DiscountAmountTextBox.ForeColor = System.Drawing.Color.White;
+            this.DiscountAmountTextBox.BackColor = System.Drawing.Color.White;
+            this.DiscountAmountTextBox.ForeColor = System.Drawing.Color.Black;
             this.DiscountAmountTextBox.Location = new System.Drawing.Point(112, 85);
             this.DiscountAmountTextBox.Name = "DiscountAmountTextBox";
             this.DiscountAmountTextBox.ReadOnly = true;
@@ -103,7 +107,8 @@
             // 
             // TotalTextBox
             // 
-            this.TotalTextBox.ForeColor = System.Drawing.Color.White;
+            this.TotalTextBox.BackColor = System.Drawing.Color.White;
+            this.TotalTextBox.ForeColor = System.Drawing.Color.Black;
             this.TotalTextBox.Location = new System.Drawing.Point(112, 123);
             this.TotalTextBox.Name = "TotalTextBox";
             this.TotalTextBox.ReadOnly = true;
@@ -118,6 +123,7 @@
             this.Calculate.TabIndex = 8;
             this.Calculate.Text = "Calculate";
             this.Calculate.UseVisualStyleBackColor = true;
+            this.Calculate.Click += new System.EventHandler(this.Calculate_Click);
             // 
             // ExitButton
             // 
@@ -127,6 +133,7 @@
             this.ExitButton.TabIndex = 9;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // InvoiceTotalForm
             // 
